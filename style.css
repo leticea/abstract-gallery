@@ -53,7 +53,8 @@ main {
   grid-row: 1/3;
 }
 
-.model-1 .container:nth-child(1) img {
+.model-1 .container:nth-child(1) img,
+.model-2 .container:nth-child(3) img {
   aspect-ratio: 9/16;
 }
 
@@ -63,4 +64,22 @@ main {
 
 .horizontal img {
   aspect-ratio: 16/9;
+}
+
+.model-2 .container:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+.container {
+  position: relative;
+}
+
+.container span {
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  padding: 2.4rem;
+  position: absolute;
+  bottom: 0;
 }
